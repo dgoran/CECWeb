@@ -2,9 +2,28 @@
 <html>
 <head>
 	<title>Live</title>
+	<style>
+		.videoWrap {
+  			display: flex;
+  			align-items: center;
+  			justify-content: center;
+			}
+
+		.videoWrap iframe {
+ 			 width: 800px;
+  			height: 800px;
+			}
+
+			div, body, html {
+ 			 height: 100%;
+			  width: 100%;
+			}
+	</style>
 </head>
 <body>
-<p align="center">Live Stream
-<iframe width="800" height="600" align="middle" src="https://www.youtube.com/embed/yb1tdFdHWV0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>Live Stream</p>
+<div class="videoWrap">
+	<iframe width="800" height="600" align="middle" src="https://www.youtube.com/embed/yb1tdFdHWV0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </body>
 </html> 
