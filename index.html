@@ -1491,20 +1491,6 @@
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
-    <script>
-            var $form = $('form#contactForm'),
-            url = 'https://script.google.com/macros/s/AKfycbyOHXy-cKd80hw1axokwNX3kcMbJnr3m-EUELz4Y6uazPw5K-Em/exec'
-        $('#submit-form').on('click', function(e) {
-          e.preventDefault();
-          var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject()
-          }).success(
-            // do something
-          );
-        })
-    </script>  
+    <script src="assets/js/googlesheets.js"></script>
   </body>
 </html>
