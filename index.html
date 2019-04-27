@@ -1375,9 +1375,9 @@
                         .then(response => console.log('Success!', response))
                         .catch(error => console.error('Error!', error.message))
                     });
-                    if ( /*no errors*/ ) {
-                      window.location='http://getaudienceresponse.com/live.html'
-                        }
+                      setTimeout(function() {
+                      window.location.href = "getaudienceresponse.com/live.html";
+                      }, 2000);
                   </script>
               </div>
             </div>
