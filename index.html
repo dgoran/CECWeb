@@ -1375,8 +1375,8 @@
                         // .then(response => console.log('Success!', response), location = "/live.html")
                         .then(response => console.log('Success!', response))
 
-                        .catch(error => console.error('Error!', error.message))
-                    });$("#contactForm").trigger('reset'); //jquery
+                        .catch(error => console.error('Error!', error.message).trigger('reset'))
+                    });
                   </script>
               </div>
             </div>
